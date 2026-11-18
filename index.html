@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – Stacca</title>
+  <title>Privacy Policy – Unplug!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -71,11 +71,44 @@
       letter-spacing: .04em;
     }
 
+    /* ── LANG SELECTOR ── */
+    .lang-selector {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .lang-btn {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
     /* ── LAYOUT ── */
     main {
       max-width: 760px;
       margin: 0 auto;
       padding: 3rem 1.5rem 6rem;
+    }
+    
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
     }
 
     /* ── SECTIONS ── */
@@ -220,141 +253,97 @@
 <body>
 
 <header>
-  <div class="app-name">Stacca</div>
-  <div class="doc-title">Informativa sulla Privacy</div>
-  <div class="date-badge">In vigore dal 29 giugno 2026</div>
+  <div class="app-name">Unplug!</div>
+  <div class="doc-title">Privacy Policy</div>
+  <div class="date-badge">Effective from 18 November 2026</div>
 </header>
 
 <main>
 
   <section>
-    <h1><span class="num">1</span>Titolare del Trattamento</h1>
-    <p>Il Titolare del trattamento dei dati personali raccolti tramite l'applicazione <strong>Stacca</strong> è lo sviluppatore indipendente raggiungibile al seguente indirizzo:</p>
+    <h1><span class="num">1</span>In short</h1>
     <div class="highlight">
-      📧 <a href="mailto:arch.fdm@gmail.com">arch.fdm@gmail.com</a>
+      Unplug! does not collect any personal data. There are no accounts, no analytics, no ads and no trackers. Everything the app needs stays on your phone.
     </div>
-    <p>Per qualsiasi richiesta relativa al trattamento dei tuoi dati personali, incluse le richieste di esercizio dei diritti di cui al punto 8, puoi contattarci esclusivamente tramite l'indirizzo email sopra indicato.</p>
   </section>
 
   <section>
-    <h1><span class="num">2</span>Dati Personali Raccolti</h1>
-
-    <h2>2.1 Dati forniti direttamente dall'utente</h2>
-    <p>La registrazione di un account è <strong>facoltativa</strong>. È possibile utilizzare l'applicazione e acquistare la versione premium anche senza creare un account. Qualora l'utente scelga di registrarsi, raccogliamo il seguente dato personale:</p>
-    <ul>
-      <li><strong>Indirizzo email</strong> — utilizzato come identificativo univoco dell'account e per le comunicazioni di servizio.</li>
-    </ul>
-    <p>È possibile utilizzare l'applicazione con una prova gratuita di 7 giorni delle funzionalità premium, al termine della quale l'app resta utilizzabile gratuitamente con funzionalità ridotte.</p>
-
-    <h2>2.2 Dati tecnici e di utilizzo</h2>
-    <p>Attraverso i servizi tecnici di terze parti descritti al punto 5, possono essere raccolti automaticamente dati tecnici anonimi o pseudonimizzati, tra cui:</p>
-    <ul>
-      <li>Informazioni sul dispositivo (sistema operativo, versione dell'app)</li>
-      <li>Dati di utilizzo dell'applicazione in forma aggregata</li>
-      <li>Log di errori e crash, per garantire la stabilità del servizio</li>
-    </ul>
-
-    <h2>2.3 Dati di pagamento</h2>
-    <p>I pagamenti per l'acquisto della versione premium (al prezzo indicato sul Google Play Store) sono gestiti esclusivamente da Google Play Store. Non raccogliamo né conserviamo alcun dato relativo a carte di credito, dati bancari o altri strumenti di pagamento. Il trattamento dei dati di pagamento è interamente disciplinato dalla Privacy Policy di Google LLC.</p>
-  </section>
-
-  <section>
-    <h1><span class="num">3</span>Finalità e Basi Giuridiche del Trattamento</h1>
-    <p>Trattiamo i tuoi dati personali per le seguenti finalità:</p>
-    <ul>
-      <li>Creazione e gestione dell'account utente — <em>esecuzione del contratto (art. 6, par. 1, lett. b GDPR)</em></li>
-      <li>Erogazione del servizio premium a seguito dell'acquisto — <em>esecuzione del contratto (art. 6, par. 1, lett. b GDPR)</em></li>
-      <li>Comunicazioni strettamente legate al servizio (aggiornamenti, scadenze, modifiche ai termini) — <em>legittimo interesse (art. 6, par. 1, lett. f GDPR)</em></li>
-      <li>Adempimento di obblighi di legge fiscali e contabili — <em>obbligo legale (art. 6, par. 1, lett. c GDPR)</em></li>
-      <li>Miglioramento tecnico dell'applicazione tramite analisi anonime degli errori — <em>legittimo interesse (art. 6, par. 1, lett. f GDPR)</em></li>
-    </ul>
-  </section>
-
-  <section>
-    <h1><span class="num">4</span>Periodo di Conservazione dei Dati</h1>
-    <ul>
-      <li>I dati dell'account (email) sono conservati per tutta la durata del rapporto contrattuale e per un massimo di <strong>24 mesi</strong> dalla cancellazione dell'account o dall'ultima interazione con il servizio.</li>
-      <li>I dati relativi alle transazioni di acquisto sono conservati per <strong>10 anni</strong> ai sensi degli obblighi fiscali e contabili previsti dalla normativa italiana (D.P.R. 633/1972 e D.P.R. 600/1973).</li>
-      <li>I log tecnici anonimi sono conservati per un massimo di <strong>12 mesi</strong>.</li>
-    </ul>
-    <p>Trascorso il periodo di conservazione, i dati sono cancellati in modo sicuro o resi definitivamente anonimi.</p>
-  </section>
-
-  <section>
-    <h1><span class="num">5</span>Servizi di Terze Parti</h1>
-
-    <h2>5.1 Supabase</h2>
-    <p>Supabase Inc. è utilizzato come piattaforma backend per la gestione dell'autenticazione e l'archiviazione sicura dei dati. Agisce in qualità di Responsabile del trattamento ai sensi dell'art. 28 GDPR. I dati possono essere conservati in server nello Spazio Economico Europeo (SEE) o in paesi terzi con adeguate garanzie (Clausole Contrattuali Standard).</p>
-    <p><a href="https://supabase.com/privacy" target="_blank" rel="noopener">→ Privacy Policy di Supabase</a></p>
-
-    <h2>5.2 Google Play Services</h2>
-    <p>La distribuzione dell'applicazione e la gestione degli acquisti in-app avvengono tramite Google Play Store, gestito da Google LLC.</p>
-    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">→ Privacy Policy di Google</a></p>
-
-    <h2>5.3 GitHub</h2>
-    <p>Il codice sorgente dell'applicazione è ospitato su GitHub (GitHub Inc., società di Microsoft). GitHub non tratta dati personali degli utenti finali dell'applicazione.</p>
-    <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">→ Privacy Statement di GitHub</a></p>
-  </section>
-
-  <section>
-    <h1><span class="num">6</span>Trasferimento dei Dati Fuori dall'UE</h1>
-    <p>Alcuni fornitori di servizi indicati al punto 5 potrebbero trasferire i tuoi dati personali al di fuori dello Spazio Economico Europeo. In tal caso, ci assicuriamo che il trasferimento avvenga nel rispetto del GDPR, in particolare mediante:</p>
-    <ul>
-      <li>Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea</li>
-      <li>Decisioni di adeguatezza della Commissione Europea per i paesi destinatari</li>
-    </ul>
-    <p>Puoi richiedere maggiori informazioni sui trasferimenti internazionali scrivendo all'indirizzo indicato al punto 1.</p>
-  </section>
-
-  <section>
-    <h1><span class="num">7</span>Sicurezza dei Dati</h1>
-    <p>Adottiamo misure tecniche e organizzative adeguate per proteggere i tuoi dati personali da accessi non autorizzati, perdita o divulgazione accidentale:</p>
-    <ul>
-      <li>Cifratura dei dati in transito tramite protocollo TLS/HTTPS</li>
-      <li>Accesso ai dati riservato alle sole parti necessarie per l'erogazione del servizio</li>
-      <li>Utilizzo di Supabase, certificato SOC 2 Type II</li>
-    </ul>
-    <p>In caso di violazione dei dati personali che comporti un rischio elevato per i tuoi diritti, sarai notificato tempestivamente ai sensi dell'art. 34 GDPR.</p>
-  </section>
-
-  <section>
-    <h1><span class="num">8</span>I Tuoi Diritti</h1>
-    <p>Ai sensi degli artt. 15–22 GDPR, hai il diritto di:</p>
-    <ul>
-      <li><strong>Accesso</strong> — ottenere copia dei tuoi dati personali (art. 15)</li>
-      <li><strong>Rettifica</strong> — correggere dati inesatti o incompleti (art. 16)</li>
-      <li><strong>Cancellazione</strong> — richiedere la rimozione dei tuoi dati, salvo obblighi di legge (art. 17)</li>
-      <li><strong>Limitazione</strong> — limitare il trattamento in determinati casi (art. 18)</li>
-      <li><strong>Portabilità</strong> — ricevere i tuoi dati in formato leggibile da macchina (art. 20)</li>
-      <li><strong>Opposizione</strong> — opporti ai trattamenti basati su legittimo interesse (art. 21)</li>
-      <li><strong>Revoca del consenso</strong> — in qualsiasi momento, senza effetto retroattivo</li>
-    </ul>
+    <h1><span class="num">2</span>Who we are</h1>
+    <p><strong>Unplug! – Leave Work on Time</strong> (package <em>com.stacca.app</em>) is developed by an independent developer based in Italy, publishing on Google Play as <strong>deMa Media</strong>. The developer is the data controller for this app.</p>
     <div class="highlight">
-      Per esercitare i tuoi diritti scrivi a <a href="mailto:arch.fdm@gmail.com">arch.fdm@gmail.com</a>. Risponderemo entro <strong>30 giorni</strong>.
+      📧 <a href="mailto:staccalapp@gmail.com">staccalapp@gmail.com</a>
     </div>
-    <p>Hai inoltre il diritto di proporre reclamo al <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante per la Protezione dei Dati Personali</a> o all'Autorità di controllo del tuo paese di residenza UE.</p>
+    <p>Write to this address for any question about privacy or to exercise your rights (see point 7).</p>
   </section>
 
   <section>
-    <h1><span class="num">9</span>Minori</h1>
-    <p>L'applicazione Stacca non è destinata a persone di età inferiore ai <strong>16 anni</strong>. Non raccogliamo consapevolmente dati personali di minori di 16 anni. Qualora venissimo a conoscenza di aver raccolto inavvertitamente tali dati, provvederemo alla loro immediata cancellazione. Genitori o tutori legali sono invitati a contattarci all'indirizzo indicato al punto 1.</p>
+    <h1><span class="num">3</span>Data we collect</h1>
+    <p><strong>None.</strong> The app does not ask for your name, email or any other personal information, and it does not send any data to us or to third parties.</p>
+    <ul>
+      <li>No account and no sign-in.</li>
+      <li>No analytics, tracking or advertising tools.</li>
+      <li>No access to your contacts, location, microphone, camera images, photos or files.</li>
+    </ul>
   </section>
 
   <section>
-    <h1><span class="num">10</span>Modifiche alla Presente Informativa</h1>
-    <p>Ci riserviamo il diritto di modificare la presente informativa per adeguarla a cambiamenti normativi, tecnologici o alle funzionalità dell'applicazione. Le modifiche sostanziali saranno comunicate agli utenti registrati tramite email con un preavviso di almeno <strong>15 giorni</strong> prima dell'entrata in vigore.</p>
-    <p>L'utilizzo continuato dell'applicazione dopo la notifica costituisce accettazione della nuova informativa.</p>
+    <h1><span class="num">4</span>Data stored only on your phone</h1>
+    <p>To work, the app saves on your device, and <strong>does not send to us or to anyone else</strong>:</p>
+    <ul>
+      <li>your settings (end of work time, working days, alert speed, sound, vibration, voice, flash);</li>
+      <li>your <strong>history</strong>: for each day, the end of work time, the minutes of overtime and your streak (up to one year);</li>
+      <li>the status of your Premium plan, as last confirmed by Google Play.</li>
+    </ul>
+    <p>If Android's automatic backup is turned on, this data may be included in the backup of your Google account, managed by Google. It is deleted when you uninstall the app or use "Clear storage" in Android settings.</p>
   </section>
 
   <section>
-    <h1><span class="num">11</span>Legge Applicabile</h1>
-    <p>La presente informativa è redatta in conformità al <strong>Regolamento (UE) 2016/679 (GDPR)</strong>, al D.Lgs. 196/2003 (Codice della Privacy) come modificato dal D.Lgs. 101/2018, e alle linee guida del Garante per la Protezione dei Dati Personali. Per qualsiasi controversia si applica la legge italiana.</p>
+    <h1><span class="num">5</span>Phone features used</h1>
+    <ul>
+      <li><strong>Notifications, exact alarms and start after reboot</strong> — to alert you when your work time ends, even after you restart your phone.</li>
+      <li><strong>Vibration</strong> — for alerts.</li>
+      <li><strong>Flashlight</strong> — during "Roast me" (you can turn it off in Settings). The app only switches the light on and off: it never takes pictures or videos.</li>
+      <li><strong>Voice</strong> — the voice you hear is pre-recorded audio included in the app. The app does not use the microphone and records nothing.</li>
+      <li><strong>Battery optimization exemption</strong> — so that alerts arrive on time.</li>
+      <li><strong>Internet</strong> — used only by Google Play to handle purchases and to show the review request.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h1><span class="num">6</span>Google Play</h1>
+    <p>The app is distributed through Google Play, operated by Google LLC. Google may process data under its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> when:</p>
+    <ul>
+      <li><strong>you buy Premium</strong> (yearly subscription or lifetime purchase): payment is handled entirely by Google Play. We never see your card or bank details. The app only asks Google Play, on your phone, whether you own Premium;</li>
+      <li><strong>you rate the app</strong> from the in-app review request, which is shown and handled by Google Play;</li>
+      <li><strong>the app crashes or runs slowly</strong>: Google Play may collect anonymous technical statistics (Android vitals). We only see them in aggregated form, to fix bugs.</li>
+    </ul>
+    <p>To manage or cancel a subscription, or to ask for a refund, use your <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play account</a>.</p>
+  </section>
+
+  <section>
+    <h1><span class="num">7</span>Your rights</h1>
+    <p>Under the EU General Data Protection Regulation (GDPR) you have the right to access, correct, delete and port your personal data, to restrict or object to its processing, and to lodge a complaint with a data protection authority (in Italy, the Garante per la protezione dei dati personali). Since we hold no personal data about you, there is usually nothing to access or delete, but you can always write to <a href="mailto:staccalapp@gmail.com">staccalapp@gmail.com</a> and we will reply within 30 days.</p>
+  </section>
+
+  <section>
+    <h1><span class="num">8</span>Earlier versions with sign-in</h1>
+    <p>Versions released before November 2026 (up to 2.6) offered an optional sign-in, managed through Supabase. That feature has been removed, and <strong>all accounts and their email addresses were permanently deleted on 18 November 2026</strong>. If you still have an old version, please update the app: nothing you saved on your phone is lost.</p>
+  </section>
+
+  <section>
+    <h1><span class="num">9</span>Children</h1>
+    <p>The app is meant for working adults and is not directed at children under 16.</p>
+  </section>
+
+  <section>
+    <h1><span class="num">10</span>Changes to this policy</h1>
+    <p>If this policy changes, we will publish the new version on this page and update the date at the top. If the app ever starts collecting personal data, we will say so here before it happens.</p>
   </section>
 
 </main>
 
 <footer>
-  Informativa Privacy – App Stacca &nbsp;·&nbsp; Aggiornata il 29 giugno 2026 &nbsp;·&nbsp; <a href="mailto:arch.fdm@gmail.com">arch.fdm@gmail.com</a>
+  Unplug! · Privacy Policy · <a href="mailto:staccalapp@gmail.com">staccalapp@gmail.com</a>
 </footer>
 
 </body>
